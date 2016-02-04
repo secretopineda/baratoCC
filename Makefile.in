@@ -101,7 +101,7 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_helloworld_OBJECTS = hola.$(OBJEXT)
+am_helloworld_OBJECTS = main.$(OBJEXT)
 helloworld_OBJECTS = $(am_helloworld_OBJECTS)
 helloworld_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_@AM_V@)
@@ -264,7 +264,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
-helloworld_SOURCES = hola.c
+helloworld_SOURCES = main.c
 all: all-am
 
 .SUFFIXES:
@@ -355,7 +355,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/hola.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
